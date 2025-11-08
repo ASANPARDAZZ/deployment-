@@ -1,0 +1,29 @@
+deployment/
+├── 📁 nginx/
+│   ├── nginx.conf
+│   ├── ssl.conf
+│   ├── security-headers.conf
+│   └── sites-available/
+│       ├── apz-bridge.conf
+│       ├── apz-explorer.conf
+│       └── apz-api.conf
+├── 📁 ssl/
+│   ├── generate-certs.sh
+│   ├── renew-certs.sh
+│   └── dhparam.pem
+├── 📁 scripts/
+│   ├── deploy.sh
+│   ├── setup-server.sh
+│   ├── backup-database.sh
+│   └── monitoring-setup.sh
+├── 📁 systemd/
+│   ├── apz-bridge.service
+│   ├── apz-relayer.service
+│   └── apz-indexer.service
+├── 📁 docker/
+│   ├── docker-compose.prod.yml
+│   └── .env.production
+├── 📁 monitoring/
+│   ├── nginx-metrics.conf
+│   └── nginx-status.conf
+└── README_DEPLOYMENT.md
