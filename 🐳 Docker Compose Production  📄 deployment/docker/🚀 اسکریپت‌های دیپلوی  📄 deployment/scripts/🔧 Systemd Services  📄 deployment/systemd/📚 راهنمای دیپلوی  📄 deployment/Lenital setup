@@ -1,0 +1,2 @@
+chmod +x deployment/scripts/deploy.sh
+./deployment/scripts/deploy.sh setup
